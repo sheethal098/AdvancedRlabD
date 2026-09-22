@@ -17,3 +17,5 @@ LazyData: true
 URL: https://github.com/sheethal098/AdvancedRlab3D
 BugReports: https://github.com/sheethal098/AdvancedRlab3D/issues
 Config/roxygen2/version: 8.1.0
+Depends: 
+    R (>= 3.5)
