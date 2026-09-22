@@ -1,18 +1,25 @@
 Package: AdvancedRlab3D
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Algorithms for Advanced R
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      person(
+        "Mariam", "Yayloyan",
+        email = "marya117@student.liu.se",
+        role = c("aut")
+        ),
+      person(
+      "Sheethal", "Lakshmana",
+      email = "shehe874@student.liu.se",
       role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+      ))
+Description: Implements graph and number-theoretic algorithms, including
+  the Euclidean algorithm for calculating the greatest common divisor
+  and the Dijkstra algorithm for finding shortest paths in a weighted
+  graph. The package also includes a weighted graph dataset.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/sheethal098/AdvancedRlab3D
 BugReports: https://github.com/sheethal098/AdvancedRlab3D/issues
+Config/roxygen2/version: 8.1.0
