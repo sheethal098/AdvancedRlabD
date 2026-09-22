@@ -3,26 +3,29 @@ Type: Package
 Title: Algorithms for Advanced R
 Version: 0.1.0
 Authors@R: c(
-      person(
-        "Mariam", "Yayloyan",
-        email = "marya117@student.liu.se",
-        role = c("aut")
-        ),
-      person(
+    person(
+      "Mariam", "Yayloyan",
+      email = "marya117@student.liu.se",
+      role = c("aut", "cre")
+    ),
+    person(
       "Sheethal", "Lakshmana",
       email = "shehe874@student.liu.se",
-      role = c("aut", "cre")
-      ))
+      role = "aut"
+    )
+  )
 Description: Implements graph and number-theoretic algorithms, including
-  the Euclidean algorithm for calculating the greatest common divisor
-  and the Dijkstra algorithm for finding shortest paths in a weighted
-  graph. The package also includes a weighted graph dataset.
+    the Euclidean algorithm for calculating the greatest common divisor
+    and the Dijkstra algorithm for finding shortest paths in a weighted
+    graph. The package also includes a weighted graph dataset.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/sheethal098/AdvancedRlabD
 BugReports: https://github.com/sheethal098/AdvancedRlabD/issues
 Config/roxygen2/version: 8.1.0
-Suggests: 
+Depends:
+    R (>= 3.5)
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
