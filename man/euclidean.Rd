@@ -10,7 +10,8 @@ euclidean(a, b)
 \item{a}{A numeric scalar or integer}
 
 \item{b}{A numeric scalar or integer
-#' The algorithm repeatedly calculates the remainder of a divided by b,
+
+The algorithm repeatedly calculates the remainder of a divided by b,
 then replaces a with b and b with the remainder.
 This process continues until b becomes zero.
 The value of a is then the greatest common divisor.}
