@@ -1,4 +1,4 @@
-Package: AdvancedRlab3D
+Package: AdvancedRlabD
 Type: Package
 Title: Algorithms for Advanced R
 Version: 0.1.0
@@ -20,8 +20,8 @@ Description: Implements graph and number-theoretic algorithms, including
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/sheethal098/AdvancedRlab3D
-BugReports: https://github.com/sheethal098/AdvancedRlab3D/issues
+URL: https://github.com/sheethal098/AdvancedRlabD
+BugReports: https://github.com/sheethal098/AdvancedRlabD/issues
 Config/roxygen2/version: 8.1.0
 Suggests: 
     testthat (>= 3.0.0)

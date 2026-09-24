@@ -1,5 +1,4 @@
 library(testthat)
-library(AdvancedRlab3D)
 test_that("euclidean calculates the greatest common divisor", {
   expect_equal(euclidean(48, 18), 6)
   expect_equal(euclidean(12, 8), 4)
