@@ -11,20 +11,16 @@ dijkstra(graph, init)
 v1, v2, and w, where v1 is the starting vertex, v2 is the destination
 vertex, and w is the edge weight.}
 
-\item{init}{A numeric scalar specifying the initial vertex.
-
-The algorithm calculates the shortest path from the initial vertex
-to every other vertex in the graph.}
+\item{init}{A numeric scalar specifying the initial vertex.}
 }
 \value{
 A numeric vector containing the shortest path from the initial
-vertex to every other vertex.
+  vertex to every other vertex.
 }
 \description{
-Calculate shortest paths using Dijkstra's algorithm
+The algorithm calculates the shortest path from the initial vertex
+to every other vertex in the graph.
 }
 \references{
-\url{https://en.wikipedia.org/wiki/Dijkstra's_algorithm}
-
-wiki_graph.R
+\url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 }

@@ -1,21 +1,20 @@
 #' Calculate shortest paths using Dijkstra's algorithm
 #'
+#' The algorithm calculates the shortest path from the initial vertex
+#' to every other vertex in the graph.
+#'
 #' @param graph A data frame containing the graph edges with variables
 #'   v1, v2, and w, where v1 is the starting vertex, v2 is the destination
 #'   vertex, and w is the edge weight.
 #' @param init A numeric scalar specifying the initial vertex.
 #'
-#' The algorithm calculates the shortest path from the initial vertex
-#' to every other vertex in the graph.
-#'
 #' @return A numeric vector containing the shortest path from the initial
-#' vertex to every other vertex.
+#'   vertex to every other vertex.
 #'
 #' @references
-#' \url{https://en.wikipedia.org/wiki/Dijkstra's_algorithm}
+#' \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 #'
-#' wiki_graph.R
-
+#' @export
 
 
 dijkstra<-function(graph,init){   #init,The node where Dijkstra starts
@@ -23,8 +22,10 @@ dijkstra<-function(graph,init){   #init,The node where Dijkstra starts
     stop("graph must be data frame")
   if(!all(c("v1","v2","w") %in% names(graph)))  #all is used to show all the validations r true or not)
     stop("graph must contain v1,v2,w")
+  if(!is.numeric(graph$w)||any(is.na(graph$w))||any(graph$w<0))
+    stop("w must be numeric, non-missing, and non-negative")
   if(!is.numeric(init)||length(init) !=1|| !init %in% c(graph$v1,graph$v2))
-     stop("init must be a numeric scalar that exists in the graph")
+    stop("init must be a numeric scalar that exists in the graph")
   nodes<-unique(c(graph$v1,graph$v2))  #unique removes the duplicates
   distance<-rep(Inf,length(nodes))  #rep() means it repeats the inf as its our initial weight
   distance[nodes == init]<-0
@@ -37,6 +38,8 @@ dijkstra<-function(graph,init){   #init,The node where Dijkstra starts
   while(length(visited)<length(nodes)){
     unvisited<-setdiff(nodes,visited)
     unvisited_distance<-distance[match(unvisited,nodes)]
+    if(all(is.infinite(unvisited_distance)))
+      break
     current<-unvisited[which.min(unvisited_distance)]
     neighbors<-graph[graph$v1 == current,]
     new_distance<- distance[nodes == current ]+neighbors$w
@@ -50,6 +53,3 @@ dijkstra<-function(graph,init){   #init,The node where Dijkstra starts
   }
   return(distance)
 }
-data(wiki_graph)
-#wiki_graph
-dijkstra(wiki_graph, 3)
