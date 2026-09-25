@@ -50,6 +50,4 @@ dijkstra<-function(graph,init){   #init,The node where Dijkstra starts
   }
   return(distance)
 }
-data(wiki_graph)
-#wiki_graph
-dijkstra(wiki_graph, 3)
+
