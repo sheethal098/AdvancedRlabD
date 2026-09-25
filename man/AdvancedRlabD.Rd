@@ -7,7 +7,7 @@
 \title{AdvancedRlabD}
 \description{
 This package contains functions and datasets developed for the
-Advanced R Lab 3D course.
+Advanced R course Lab.
 }
 \details{
 The package provides the \code{dijkstra()} function for calculating
