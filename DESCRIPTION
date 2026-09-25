@@ -1,7 +1,7 @@
 Package: AdvancedRlabD
 Type: Package
 Title: Algorithms for Advanced R
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: c(
     person(
       "Mariam", "Yayloyan",
