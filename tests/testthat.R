@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(AdvancedRlab3D)
+library(AdvancedRlabD)
 
-test_check("AdvancedRlab3D")
+test_check("AdvancedRlabD")
