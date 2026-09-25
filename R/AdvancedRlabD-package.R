@@ -1,7 +1,7 @@
 #' AdvancedRlabD
 #'
 #' This package contains functions and datasets developed for the
-#' Advanced R Lab 3D course.
+#' Advanced R course Lab.
 #'
 #' The package provides the \code{dijkstra()} function for calculating
 #' shortest distances in a weighted graph using Dijkstra's algorithm,

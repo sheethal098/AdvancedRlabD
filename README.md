@@ -1,4 +1,7 @@
 # AdvancedRlabD
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/sheethal098/AdvancedRlabD/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sheethal098/AdvancedRlabD/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 **Algorithms for Advanced R**
 
@@ -12,11 +15,14 @@ This package was developed as part of the Advanced Programming in R course at Li
 
 ## Installation
 
-You can install the development version of `AdvancedRlabD` from GitHub using `devtools`:
+You can install the development version of `AdvancedRlabD` from GitHub using `devtools` or `pak`:
 
 ```r
 # install.packages("devtools")
 devtools::install_github("sheethal098/AdvancedRlabD")
+# or
+# install.packages("pak")
+pak::pak("sheethal098/AdvancedRlabD")
 ```
 
 ## Usage
