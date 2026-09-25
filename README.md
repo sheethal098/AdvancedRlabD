@@ -1,4 +1,7 @@
 # AdvancedRlabD
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/sheethal098/AdvancedRlabD/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sheethal098/AdvancedRlabD/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 **Algorithms for Advanced R**
 
